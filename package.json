@@ -1,5 +1,5 @@
 {
-  "name": "@dreams/phone-input-modern",
+  "name": "@dreamsinternational/phone-input-modern",
   "version": "0.0.2",
   "description": "A customizable React phone number input with country search, flags, and formatting.",
   "type": "module",

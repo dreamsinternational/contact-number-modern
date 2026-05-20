@@ -1,19 +1,19 @@
-# @dreams/phone-input-modern
+# @dreamsinternational/phone-input-modern
 
 A customizable React phone input component with country search, flags, preferred country codes, country-code detection, and formatted phone number output.
 
 ## Install
 
 ```bash
-npm install @dreams/phone-input-modern
+npm install @dreamsinternational/phone-input-modern
 ```
 
 ## Usage
 
 ```jsx
 import { useState } from "react";
-import PhoneInput from "@dreams/phone-input-modern";
-import "@dreams/phone-input-modern/style.css";
+import PhoneInput from "@dreamsinternational/phone-input-modern";
+import "@dreamsinternational/phone-input-modern/style.css";
 
 export default function Example() {
   const [phoneValues, setPhoneValues] = useState({
