@@ -1,19 +1,19 @@
-# phoneinputomcustom
+# @dreams/phone-input-modern
 
 A customizable React phone input component with country search, flags, preferred country codes, country-code detection, and formatted phone number output.
 
 ## Install
 
 ```bash
-npm install phoneinputomcustom
+npm install @dreams/phone-input-modern
 ```
 
 ## Usage
 
 ```jsx
 import { useState } from "react";
-import PhoneInput from "phoneinputomcustom";
-import "phoneinputomcustom/style.css";
+import PhoneInput from "@dreams/phone-input-modern";
+import "@dreams/phone-input-modern/style.css";
 
 export default function Example() {
   const [phoneValues, setPhoneValues] = useState({
@@ -38,17 +38,17 @@ export default function Example() {
 
 ## Props
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| `phoneValues` | `object` | Required | Current phone state. Common keys are `number`, `countryCode`, `tempCountryCode`, `editNumber`, and `editCode`. |
-| `handlePhoneChange` | `function` | `() => {}` | Called with formatted phone data when the value changes. |
-| `PreferredCountryCodes` | `string[]` | `[]` | Dialing codes to show at the top of the country list, for example `["91", "971"]`. |
-| `defaultCountryCode` | `string` | Auto-detect | Initial dialing code, for example `"91"`. If omitted, the component tries to detect the country with `https://ipapi.co/json/`. |
-| `setError` | `function` | `() => {}` | Receives validation messages. |
-| `error` | `string` | `undefined` | Current error message from your app. |
-| `CombinedToSeperate` | `boolean` | `false` | Converts a combined code and phone number into separate values through `handlePhoneChange`. |
-| `dropdownArrow` | `ReactNode` | Built-in arrow | Custom dropdown icon. |
-| `containerCss`, `selectedFlagCss`, `selectedCountryCss`, `dropdownCss`, `searchInputCss`, `ulCss`, `PreferredliCss`, `filteredliCss`, `liCss`, `inputCss` | `string` | Built-in classes | Class names for styling individual parts of the component. |
+| Prop                                                                                                                                                      | Type        | Default          | Description                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `phoneValues`                                                                                                                                             | `object`    | Required         | Current phone state. Common keys are `number`, `countryCode`, `tempCountryCode`, `editNumber`, and `editCode`.                 |
+| `handlePhoneChange`                                                                                                                                       | `function`  | `() => {}`       | Called with formatted phone data when the value changes.                                                                       |
+| `PreferredCountryCodes`                                                                                                                                   | `string[]`  | `[]`             | Dialing codes to show at the top of the country list, for example `["91", "971"]`.                                             |
+| `defaultCountryCode`                                                                                                                                      | `string`    | Auto-detect      | Initial dialing code, for example `"91"`. If omitted, the component tries to detect the country with `https://ipapi.co/json/`. |
+| `setError`                                                                                                                                                | `function`  | `() => {}`       | Receives validation messages.                                                                                                  |
+| `error`                                                                                                                                                   | `string`    | `undefined`      | Current error message from your app.                                                                                           |
+| `CombinedToSeperate`                                                                                                                                      | `boolean`   | `false`          | Converts a combined code and phone number into separate values through `handlePhoneChange`.                                    |
+| `dropdownArrow`                                                                                                                                           | `ReactNode` | Built-in arrow   | Custom dropdown icon.                                                                                                          |
+| `containerCss`, `selectedFlagCss`, `selectedCountryCss`, `dropdownCss`, `searchInputCss`, `ulCss`, `PreferredliCss`, `filteredliCss`, `liCss`, `inputCss` | `string`    | Built-in classes | Class names for styling individual parts of the component.                                                                     |
 
 ## Returned Phone Data
 

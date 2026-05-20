@@ -9,8 +9,8 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: fileURLToPath(new URL('./src/index.js', import.meta.url)),
-      name: 'PhoneInputOmCustom',
-      fileName: 'phoneinputomcustom',
+      name: 'PhoneInputModern',
+      fileName: 'phone-input-modern',
       cssFileName: 'style',
       formats: ['es', 'umd'],
     },

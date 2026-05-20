@@ -1,16 +1,16 @@
 {
-  "name": "phoneinputomcustom",
+  "name": "@dreams/phone-input-modern",
   "version": "0.0.2",
   "description": "A customizable React phone number input with country search, flags, and formatting.",
   "type": "module",
   "author": "Om Javheri",
   "license": "MIT",
-  "main": "./dist/phoneinputomcustom.umd.cjs",
-  "module": "./dist/phoneinputomcustom.js",
+  "main": "./dist/phone-input-modern.umd.cjs",
+  "module": "./dist/phone-input-modern.js",
   "exports": {
     ".": {
-      "import": "./dist/phoneinputomcustom.js",
-      "require": "./dist/phoneinputomcustom.umd.cjs"
+      "import": "./dist/phone-input-modern.js",
+      "require": "./dist/phone-input-modern.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   },
