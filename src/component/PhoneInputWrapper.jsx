@@ -1,4 +1,3 @@
-import React from "react";
 import PhoneInputComponent from "./PhoneInputComponent";
 
 function PhoneInputWrapper({

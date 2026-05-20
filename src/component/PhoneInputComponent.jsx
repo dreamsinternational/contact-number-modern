@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import jsonPhoneData from "../utils/PhoneInputNewProcessed.json"; // Ensure this has country data
 import "../flag.css";
 const arrow = (
@@ -19,7 +18,6 @@ const PhoneInputComponent = ({
   PreferredCountryCodes = [],
   defaultCountryCode,
   setError = () => {},
-  error,
   CombinedToSeperate = false,
   dropdownArrow = arrow,
   containerCss = "containerCss",
